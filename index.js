@@ -1,11 +1,14 @@
 function getFirstSelector(selector){
-  document.querySelector("selector")
+  return document.querySelector("selector")
 }
 
 function nestedTarget(){
-  document.querySelector("#nested .target")
+  return document.querySelector("#nested .target")
 }
 
 function increaseRankBy(n){
-  document.getElementsByClassName("ranked list li")
+ var lis = document.getElementsByClassName("ranked-list li")
+ for(var i = 0; i < lis.length; i++){
+   lis[i].innerHTML = 
+ }
 }
